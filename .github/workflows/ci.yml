@@ -13,7 +13,7 @@ jobs:
       - uses: actions/cache@v1
         name: Cache node_modules
         with:
-          path: ~/.npm
+          path: ~/.yarn
           key: ${{runner.os}}-timbo-${{ hashFiles('**/yarn.lock')}}
           restore-keys: |
             ${{runner.os}}-timbo-
