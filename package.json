@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "commitizen": "^4.2.4",
+    "global": "^4.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -17,7 +19,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format:check": "prettier --check '**/*.{js,jsx,yml, yaml,json,css,scss,md}'",
-    "format": "prettier --write '**/*.{js,jsx,yml, yaml,json,css,scss,md}'"
+    "format": "prettier --write '**/*.{js,jsx,yml, yaml,json,css,scss,md}'",
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +47,16 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "semantic-release": "^19.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
