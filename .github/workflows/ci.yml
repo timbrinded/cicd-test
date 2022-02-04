@@ -14,9 +14,9 @@ jobs:
         name: Cache node_modules
         with:
           path: ~/.yarn
-          key: ${{runner.os}}-timbo-${{ hashFiles('**/yarn.lock')}}
+          key: ${{runner.os}}-bimbo-${{ hashFiles('**/yarn.lock')}}
           restore-keys: |
-            ${{runner.os}}-timbo-
+            ${{runner.os}}-bimbo-
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
