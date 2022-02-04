@@ -1,5 +1,5 @@
 {
-    "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": "file:///home/timbo/workspace/training/boilerplate-app/react-app/.github/workflow/ci.yml"
-    }
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/timbo/workspace/training/boilerplate-app/react-app/.github/workflow/ci.yml"
+  }
 }
