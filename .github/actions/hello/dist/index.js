@@ -1418,10 +1418,13 @@ const core = __webpack_require__(470)
 const github = __webpack_require__(469)
 
 try {
+  core.debug('hello')
+  core.warning('hello?')
+  core.error('HELLO!')
 
-
-    throw new Error("some error")
   const name = core.getInput('who-to-greet')
+
+  core.setSecret(name)
   console.log(`Hello ${name}`)
 
   const time = new Date()

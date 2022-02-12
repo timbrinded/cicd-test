@@ -2,10 +2,13 @@ const core = require('@actions/core')
 const github = require('@actions/github')
 
 try {
+  core.debug('hello')
+  core.warning('hello?')
+  core.error('HELLO!')
 
-
-    throw new Error("some error")
   const name = core.getInput('who-to-greet')
+
+  core.setSecret(name)
   console.log(`Hello ${name}`)
 
   const time = new Date()
