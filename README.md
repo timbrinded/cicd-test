@@ -1,4 +1,4 @@
-![](https://github.com/timbrinded/cicd-test/worksflows/CI/badge.svg?branch=main&event=push)
+[![CI](https://github.com/timbrinded/cicd-test/actions/workflows/ci.yml/badge.svg)](https://github.com/timbrinded/cicd-test/actions/workflows/ci.yml)
 
 # Getting Started with Create React App
 
