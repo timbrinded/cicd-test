@@ -1,4 +1,4 @@
-![](https://github.com/timbrinded/cicd-test/worksflows/CI/badger.svg?branch=main&event=push)
+![](https://github.com/timbrinded/cicd-test/worksflows/CI/badge.svg?branch=main&event=push)
 
 # Getting Started with Create React App
 
