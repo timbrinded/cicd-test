@@ -11,8 +11,8 @@ jobs:
           title: Title
           body: Body
           assignees: |
-            timbo
-            timbo7
+            timbrinded
+            timbotro
       - run: |
           echo ${{steps.issue.outputs.issue}}
       - uses: ./.github/actions/hello
