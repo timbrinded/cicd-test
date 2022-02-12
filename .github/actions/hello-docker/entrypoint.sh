@@ -6,7 +6,7 @@ echo "::error ::Error Message"
 echo "::add-mask::$1"
 echo "Hello $1"
 
-tim=$(date)
+time=$(date)
 echo "::set-output name=time::$time"
 
 echo "::group::Some expandable logs"
