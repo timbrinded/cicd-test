@@ -3,12 +3,12 @@ author: timbo
 description: Hello dog
 inputs:
   who-to-greet:
-    description: "Who to greet"
+    description: 'Who to greet'
     required: true
-    default: "bob"
+    default: 'bob'
 outputs:
   time:
-    description: "the greeting time"
+    description: 'the greeting time'
 runs:
-  using: "node12"
-  main: "dist/index.js"
+  using: 'node12'
+  main: 'dist/index.js'
